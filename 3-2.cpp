@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+	int a,b,c;
+	scanf_s("%d %d %d" ,&a ,&b ,&c);
+	if(a+b < a+c && a+b < b+c){
+		printf("%d" ,a+b);
+	}
+	else if(a+c < a+b && a+c < b+c){
+		printf("%d" ,a+c);
+	}
+	else if(b+c < a+b && b+c < a+c){
+		printf("%d" ,b+c);
+	}
+	return 0;
+}
